@@ -14,7 +14,7 @@ Készíts egy PostIt osztályt, amelynek van 3 tagváltozója:
 
 # Megoldás:
 
-```
+```py
 class PostIt:
     def __init__(self, hatterSzin, szoveg, szovegSzin):
         self._hatterSzin = hatterSzin
