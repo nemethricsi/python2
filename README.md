@@ -40,6 +40,8 @@ zöld = PostIt('zöld', 'Szuper!', 'barna')
 ### Megoldás:
 
 ```py
+# allat.py
+
 class Allat:
     _ehseg = 50
     _szomj = 50
@@ -53,12 +55,18 @@ class Allat:
         self._szomj += 1
 
     def lekerEhseg(self):
-        print(self._ehseg)
+        return self._ehseg
+```
+
+```py
+# megoldas.py
+
+from allat import Allat
 
 teknos = Allat()
-teknos.lekerEhseg() # 50
+print(teknos.lekerEhseg()) # 50
 teknos.eszik()
-teknos.lekerEhseg() # 49
+print(teknos.lekerEhseg()) # 49
 ```
 
 ## Feladat 3
@@ -485,6 +493,71 @@ Metódusok:
 - `slaughter()`: kiveszi a legkevésbé éhes állatot
 
 ### Megoldás:
+
+```py
+# farm.py
+
+from allat import Allat
+
+
+class Farm:
+    allatok = []
+
+    def __init__(self, szabadHelyek):
+        self.szabadHelyek = szabadHelyek
+
+    def lekerSzabadHelyek(self):
+        return self.szabadHelyek - len(self.allatok)
+
+    def add(self, allat):
+        if self.lekerSzabadHelyek() > 0:
+            self.allatok.append(allat)
+        else:
+            print('Sajnos nincs több hely jelenleg.')
+
+    def breed(self):
+        if self.lekerSzabadHelyek() > 0:
+            self.allatok.append(Allat())
+        else:
+            print('Sajnos nincs több hely jelenleg.')
+
+    def slaughter(self):
+        legkevesbeEhesAllat = None
+        legkevesebbEhseg = 50
+        for allat in self.allatok:
+            if allat.lekerEhseg() < legkevesebbEhseg:
+                legkevesebbEhseg = allat.lekerEhseg()
+                legkevesbeEhesAllat = allat
+        self.allatok.remove(legkevesbeEhesAllat)
+
+```
+
+```py
+# megoldas.py
+
+from farm import Farm
+from allat import Allat
+
+allatFarm = Farm(5)
+
+tigris = Allat()
+malac = Allat()
+allatFarm.add(tigris)
+allatFarm.add(malac)
+allatFarm.breed()  # uj random allat
+print(allatFarm.allatok)
+
+print(tigris.lekerEhseg())
+print(malac.lekerEhseg())
+
+malac.eszik()
+print(malac.lekerEhseg())
+
+allatFarm.slaughter()
+
+print(allatFarm.allatok)
+
+```
 
 ## Feladat 9
 
