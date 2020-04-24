@@ -12,9 +12,9 @@ Készíts egy PostIt osztályt, amelynek van 3 tagváltozója:
 - rózsaszínű posztit fekete szöveggel: "Hurrá!"
 - zöld posztit barna szöveggel: "Szuper!"
 
-# Megoldás:
+### Megoldás:
 
-```py
+```python
 class PostIt:
     def __init__(self, hatterSzin, szoveg, szovegSzin):
         self._hatterSzin = hatterSzin
@@ -24,4 +24,123 @@ class PostIt:
 sárga = PostIt('sárga', 'Első ötlet', 'kék')
 rózsaszín = PostIt('rózsaszín', 'Hurrá!', 'fekete')
 zöld = PostIt('zöld', 'Szuper!', 'barna')
+```
+
+## Feladat 2
+
+- Készíts egy `Allat` osztályt
+- Minden állatnak van éhsége, ami egy szám
+- Minden állatnak van szomja, ami egy szám
+- Amikor egy állat létrejön 50-es az éhsége és 50-es a szomja
+- Minden állat tud csinálni dolgokat:
+  - eszik() az éhsége csökken eggyel
+  - iszik() a szomja csökken eggyel
+  - jatszik() az éhsége és szomja növekszik eggyel
+
+### Megoldás:
+
+```py
+class Allat:
+    _ehseg = 50
+    _szomj = 50
+
+    def eszik(self):
+        self._ehseg -= 1
+    def iszik(self):
+        self._szomj -= 1
+    def jatszik(self):
+        self._ehseg += 1
+        self._szomj += 1
+
+    def lekerEhseg(self):
+        print(self._ehseg)
+
+teknos = Allat()
+teknos.lekerEhseg() # 50
+teknos.eszik()
+teknos.lekerEhseg() # 49
+```
+
+## Feladat 3
+
+Másold magadhoz az elkészített Pokemon osztályt:
+
+```python
+class Pokemon:
+    def __init__(self,  nev, tipus, ellenfel):
+        self.nev = nev
+        self.tipus = tipus
+        self.ellenfel = ellenfel
+
+    def hatasos_ellene(masik):
+        return self.ellenfel == masik.tipus
+```
+
+Illetve használd ezen programot, benne kommentként láthatod a feladatot:
+
+```python
+def initialize_pokemons():
+    pokemon = []
+    pokemon.append(Pokemon("Balbasaur", "fű", "víz"))
+    pokemon.append(Pokemon("Pikatchu", "elektromos", "víz"))
+    pokemon.append(Pokemon("Charizard", "tűz", "fű"))
+    pokemon.append(Pokemon("Balbasaur", "víz", "tűz"))
+    pokemon.append(Pokemon("Kingler", "víz", "tűz"))
+    return pokemon
+
+ash_pokemonjai = initialize_pokemons()
+
+# Minden pokémonnak van neve és típusa.
+# Bizonyos tipusok hatásosak más típusokkal szemben, pl. víz hatásos tűz ellen.
+
+# Ash-nek van néhány pokémonja.
+# Felbukkant egy vad pokémon!
+
+vad_pokemon = Pokemon("Oddish", "fű", "víz")
+
+# Melyik pokémonját válassza Ash a küzdelemhez?
+
+print("..., téged választalak!")
+```
+
+A class és a program kódja két különböző file-ban legyen.
+
+### Megoldás:
+
+```py
+# Pokemon.py
+
+class Pokemon:
+    def __init__(self,  nev, tipus, ellenfel):
+        self.nev = nev
+        self.tipus = tipus
+        self.ellenfel = ellenfel
+
+    def hatasos_ellene(self, masik):
+        return self.ellenfel == masik.tipus
+```
+
+```py
+# megoldas.py
+
+from Pokemon import Pokemon
+
+def initialize_pokemons():
+    pokemon = []
+    pokemon.append(Pokemon("Balbasaur", "fű", "víz"))
+    pokemon.append(Pokemon("Pikatchu", "elektromos", "víz"))
+    pokemon.append(Pokemon("Charizard", "tűz", "fű"))
+    pokemon.append(Pokemon("Balbasaur", "víz", "tűz"))
+    pokemon.append(Pokemon("Kingler", "víz", "tűz"))
+    return pokemon
+
+ash_pokemonjai = initialize_pokemons()
+
+vad_pokemon = Pokemon("Oddish", "fű", "víz")
+
+for i, pokemon in enumerate(ash_pokemonjai):
+    if ash_pokemonjai[i].hatasos_ellene(vad_pokemon):
+        nev = ash_pokemonjai[i].nev
+
+print(nev + ", téged választalak!") # Charizard, téged választalak!
 ```
