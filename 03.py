@@ -1,6 +1,6 @@
 # megoldas.py
 
-from Pokemon import Pokemon
+from pokemon import Pokemon
 
 def initialize_pokemons():
     pokemon = []
