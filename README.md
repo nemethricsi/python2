@@ -216,6 +216,8 @@ class Fleet(object):
 ```
 
 ```py
+# thing.py
+
 class Thing:
     def __init__(self, name):
         self.name = name
@@ -254,3 +256,55 @@ print(fleet)
 ```
 
 ## Feladat 5
+
+Hozz létre diák és tanár osztályokat: Student és Teacher néven
+
+##### `Student`
+
+- `learn()`: Kiírja a képernyőre: "A diák tanul valamit"
+- `question(teacher)`: calls the teachers answer method
+
+##### `Teacher`
+
+- `teach(student)`: Meghívja a diák `learn()` metódusát
+- `answer()`: Kiírja a képernyőre: "A tanár válaszol a diáknak"
+
+##### Program
+
+- Hozz létre egy `Student` és `Teacher` példányt
+- Hívd meg a diák `question()` metódusát és a tanár `teach()` metódusát
+
+### Megoldás:
+
+```py
+# student.py
+
+class Student:
+    def learn(self):
+        print('A diák tanul valamit')
+    def question(self, teacher):
+        teacher.answer()
+```
+
+```py
+# teacher.py
+
+class Teacher:
+    def answer(self):
+        print('A tanár válaszol a diáknak')
+    def teach(self, student):
+        student.learn()
+```
+
+```py
+# megoldas.py
+
+from student import Student
+from teacher import Teacher
+
+pisti = Student()
+marika = Teacher()
+
+pisti.question(marika)
+marika.teach(pisti)
+```
