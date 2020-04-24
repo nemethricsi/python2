@@ -373,7 +373,137 @@ audi = Car()
 bwm = Car(capacity = 200)
 
 mol.refill(audi)
-print(mol.gas_amount)
+print(mol.gas_amount) # 900
 mol.refill(bwm)
-print(mol.gas_amount)
+print(mol.gas_amount) # 700
 ```
+
+## Feladat 7
+
+Hozz létre egy filctoll és tolltartó osztályt `Sharpie` és `SharpieSet` néven.
+
+##### `Sharpie`
+
+Az osztály tárolja a filc szinét, vastagságát és tinta mennyiségét.
+
+A létrehozott példány tinta mennyisége legyen 100.
+
+Legyen egy `use()` metódusa ami csökkenti a tinta mennyiségét.
+
+##### `SharpieSet`
+
+Az osztály filceket tárol. Rendelkezzen a következő.
+
+- `add(sharpie)`: Hozzáad egy filcet
+- `count_usable()`: Visszaadja a számát azoknak a filceknek amikben még van tinta
+- `remove_trash()`: Törli az üres filceket
+
+### Megoldás:
+
+```py
+# sharpie.py
+
+class Sharpie:
+    def __init__(self, szin, vastagsag, tintaMennyiseg=100):
+        self.szin = szin
+        self.vastagsag = vastagsag
+        self.tintaMennyiseg = tintaMennyiseg
+
+    def use(self):
+        self.tintaMennyiseg -= 1
+
+```
+
+```py
+# sharpieSet.py
+
+class SharpieSet:
+    sharpies = []
+
+    def add(self, sharpie):
+        self.sharpies.append(sharpie)
+
+    def count_usable(self):
+        count = 0
+        for sharpie in self.sharpies:
+            if sharpie.tintaMennyiseg > 0:
+                count += 1
+        return count
+
+    def remove_trash(self):
+        for sharpie in self.sharpies:
+            if sharpie.tintaMennyiseg <= 0:
+                self.sharpies.remove(sharpie)
+```
+
+```py
+# megoldas.py
+
+from sharpie import Sharpie
+from sharpieSet import SharpieSet
+
+tolltarto = SharpieSet()
+print(tolltarto.sharpies)
+
+# példányosítunk 2 filcet:
+sarga = Sharpie('sárga', 4.5)
+kek = Sharpie('kék', 2)
+
+# hozzáadjuk a tolltartohoz
+tolltarto.add(sarga)
+tolltarto.add(kek)
+print(tolltarto.sharpies)
+
+# a sárgát használjuk 100-szor, kiürül
+for _ in range(100):
+    sarga.use()
+
+print('hasznalhato filcek: ' + str(tolltarto.count_usable()))
+
+tolltarto.remove_trash()
+
+# már csak a kék van a tolltartóban:
+for sharpie in tolltarto.sharpies:
+    print(sharpie.szin)
+
+```
+
+## Feladat 8
+
+##### `Farm`
+
+Használd újra az `Allat` osztályt.
+
+Hozz létre egy `Farm` osztályt.
+
+- tároljon állatokat
+- tárolja hogy maximum hány állatot tud tárolni
+
+Metódusok:
+
+- `breed()`: létrehoz egy új állatot ha van neki hely
+- `slaughter()`: kiveszi a legkevésbé éhes állatot
+
+### Megoldás:
+
+## Feladat 9
+
+##### `BlogPost`
+
+Hozz létre `BlogPost` osztályt aminek van:
+
+- szerző neve
+- címe
+- szövege
+- dátuma
+
+##### `Blog`
+
+Hozz létre `Blog` ami képes:
+
+- `BlogPost`-okat tárolni
+- Hozzáadni egyet a listához
+- Törölni egyet index alapján
+- Megváltoztatni egyet, egy másik pédányra index alapján
+
+### Megoldás:
