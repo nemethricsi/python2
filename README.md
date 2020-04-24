@@ -305,6 +305,75 @@ from teacher import Teacher
 pisti = Student()
 marika = Teacher()
 
-pisti.question(marika)
-marika.teach(pisti)
+pisti.question(marika) # A tanár válaszol a diáknak
+marika.teach(pisti) # A diák tanul valamit
+```
+
+## Feladat 6
+
+Hozz létre egy töltőállomás és autó osztályt `Station` és `Car` néven.
+
+##### `Station`
+
+Tagváltozók:
+
+- `gas_amount`: A töltőállomás üzemanyag szintje
+
+Metódusok:
+
+- `refill(car)`: Csökkenti a `gas_amount` tagváltozót az átadott autó `capacity` értékével, és megnöveli az autó `gas_amount` tagváltozóját
+
+##### `Car`
+
+Tagváltozók:
+
+- `gas_amount`: Az autó üzemanyag szintje
+
+- `capacity`: Az autó maximális üzemanyag szintje
+
+Metódusok:
+
+Hozz létre egy konstruktort ami beállítja a következő értékeket:
+
+- `gas_amount`: 0
+- `capacity`: 100
+
+### Megoldás:
+
+```py
+# car.py
+
+class Car:
+    def __init__(self, gas_amount = 0, capacity = 100):
+        self.gas_amount = gas_amount
+        self.capacity = capacity
+```
+
+```py
+# station.py
+
+class Station:
+    def __init__(self, gas_amount):
+        self.gas_amount = gas_amount
+
+    def refill(self, car):
+        self.gas_amount -= car.capacity
+        car.gas_amount += car.capacity
+```
+
+```py
+# megoldas.py
+
+from station import Station
+from car import Car
+
+mol = Station(1000)
+
+audi = Car()
+bwm = Car(capacity = 200)
+
+mol.refill(audi)
+print(mol.gas_amount)
+mol.refill(bwm)
+print(mol.gas_amount)
 ```
