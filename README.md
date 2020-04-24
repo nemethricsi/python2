@@ -580,3 +580,62 @@ Hozz létre `Blog` ami képes:
 - Megváltoztatni egyet, egy másik pédányra index alapján
 
 ### Megoldás:
+
+```py
+# blog.py
+
+class Blog:
+    posts = []
+
+    def add(self, post):
+        self.posts.append(post)
+
+    def removeByIndex(self, index):
+        for i, post in enumerate(self.posts):
+            if i == index:
+                self.posts.remove(post)
+
+    def updateByIndex(self, index, new_post):
+        for i, _ in enumerate(self.posts):
+            if i == index:
+                self.posts[i] = new_post
+
+    def listBlogPosts(self):
+        for post in self.posts:
+            print(post.szerzo + " : " + post.cim)
+```
+
+```py
+# blogPost.py
+
+class BlogPost:
+    def __init__(self, szerzo, cim, szoveg, datum):
+        self.szerzo = szerzo
+        self.cim = cim
+        self.szoveg = szoveg
+        self.datum = datum
+```
+
+```py
+# megoldas.py
+
+from blog import Blog
+from blogPost import BlogPost
+
+my_blog = Blog()
+print(my_blog.posts)  # []
+
+cikk1 = BlogPost("EAP", "Cím", "content", "2020.04.24.")
+my_blog.add(cikk1)
+cikk2 = BlogPost("Jakab", "Clickbait", "szöveg", "2020.03.12.")
+my_blog.add(cikk2)
+
+my_blog.listBlogPosts()
+
+my_blog.removeByIndex(0)  # törli cikk1-et
+my_blog.listBlogPosts()
+
+my_blog.updateByIndex(0, cikk1)  # cikk1-re a megmaradt cikk2-t
+my_blog.listBlogPosts()
+
+```
