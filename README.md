@@ -44,6 +44,8 @@ rózsaszín = PostIt('rózsaszín', 'Hurrá!', 'fekete')
 zöld = PostIt('zöld', 'Szuper!', 'barna')
 ```
 
+[Vissza a tetejére](https://github.com/nemethricsi/python2/blob/master/README.md#python-halad%C3%B3-megold%C3%A1sok)
+
 ## Feladat 2
 
 - Készíts egy `Allat` osztályt
@@ -86,6 +88,8 @@ print(teknos.lekerEhseg()) # 50
 teknos.eszik()
 print(teknos.lekerEhseg()) # 49
 ```
+
+[Vissza a tetejére](https://github.com/nemethricsi/python2/blob/master/README.md#python-halad%C3%B3-megold%C3%A1sok)
 
 ## Feladat 3
 
@@ -170,6 +174,8 @@ for i, pokemon in enumerate(ash_pokemonjai):
 
 print(nev + ", téged választalak!") # Charizard, téged választalak!
 ```
+
+[Vissza a tetejére](https://github.com/nemethricsi/python2/blob/master/README.md#python-halad%C3%B3-megold%C3%A1sok)
 
 ## Feladat 4
 
@@ -281,6 +287,8 @@ fleet.add(eat_lunch)
 print(fleet)
 ```
 
+[Vissza a tetejére](https://github.com/nemethricsi/python2/blob/master/README.md#python-halad%C3%B3-megold%C3%A1sok)
+
 ## Feladat 5
 
 Hozz létre diák és tanár osztályokat: Student és Teacher néven
@@ -334,6 +342,8 @@ marika = Teacher()
 pisti.question(marika) # A tanár válaszol a diáknak
 marika.teach(pisti) # A diák tanul valamit
 ```
+
+[Vissza a tetejére](https://github.com/nemethricsi/python2/blob/master/README.md#python-halad%C3%B3-megold%C3%A1sok)
 
 ## Feladat 6
 
@@ -403,6 +413,8 @@ print(mol.gas_amount) # 900
 mol.refill(bwm)
 print(mol.gas_amount) # 700
 ```
+
+[Vissza a tetejére](https://github.com/nemethricsi/python2/blob/master/README.md#python-halad%C3%B3-megold%C3%A1sok)
 
 ## Feladat 7
 
@@ -494,6 +506,8 @@ for sharpie in tolltarto.sharpies:
 
 ```
 
+[Vissza a tetejére](https://github.com/nemethricsi/python2/blob/master/README.md#python-halad%C3%B3-megold%C3%A1sok)
+
 ## Feladat 8
 
 ##### `Farm`
@@ -574,8 +588,9 @@ print(malac.lekerEhseg())
 allatFarm.slaughter()
 
 print(allatFarm.allatok)
-
 ```
+
+[Vissza a tetejére](https://github.com/nemethricsi/python2/blob/master/README.md#python-halad%C3%B3-megold%C3%A1sok)
 
 ## Feladat 9
 
@@ -655,5 +670,6 @@ my_blog.listBlogPosts()
 
 my_blog.updateByIndex(0, cikk1)  # cikk1-re a megmaradt cikk2-t
 my_blog.listBlogPosts()
-
 ```
+
+[Vissza a tetejére](https://github.com/nemethricsi/python2/blob/master/README.md#python-halad%C3%B3-megold%C3%A1sok)
