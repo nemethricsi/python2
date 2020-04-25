@@ -1,5 +1,3 @@
-# Pokemon.py
-
 class Pokemon:
     def __init__(self,  nev, tipus, ellenfel):
         self.nev = nev
