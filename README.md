@@ -1,22 +1,22 @@
 # Python Haladó (megoldások)
 
-#### [1. Feladat](https://github.com/nemethricsi/python2/blob/master/README.md#feladat-1) [(megoldás)](https://github.com/nemethricsi/python2/blob/master/README.md#megold%C3%A1s)
+#### [1. Feladat](https://github.com/nemethricsi/python2/blob/master/README.md#feladat-1) [(megoldás)](https://github.com/nemethricsi/python2/blob/master/README.md#megold%C3%A1s-f1)
 
-#### [2. Feladat](https://github.com/nemethricsi/python2/blob/master/README.md#feladat-2) [(megoldás)](https://github.com/nemethricsi/python2/blob/master/README.md#megold%C3%A1s-1)
+#### [2. Feladat](https://github.com/nemethricsi/python2/blob/master/README.md#feladat-2) [(megoldás)](https://github.com/nemethricsi/python2/blob/master/README.md#megold%C3%A1s-f2)
 
-#### [3. Feladat](https://github.com/nemethricsi/python2/blob/master/README.md#feladat-3) [(megoldás)](https://github.com/nemethricsi/python2/blob/master/README.md#megold%C3%A1s-2)
+#### [3. Feladat](https://github.com/nemethricsi/python2/blob/master/README.md#feladat-3) [(megoldás)](https://github.com/nemethricsi/python2/blob/master/README.md#megold%C3%A1s-f3)
 
-#### [4. Feladat](https://github.com/nemethricsi/python2/blob/master/README.md#feladat-4) [(megoldás)](https://github.com/nemethricsi/python2/blob/master/README.md#megold%C3%A1s-3)
+#### [4. Feladat](https://github.com/nemethricsi/python2/blob/master/README.md#feladat-4) [(megoldás)](https://github.com/nemethricsi/python2/blob/master/README.md#megold%C3%A1s-f4)
 
-#### [5. Feladat](https://github.com/nemethricsi/python2/blob/master/README.md#feladat-5) [(megoldás)](https://github.com/nemethricsi/python2/blob/master/README.md#megold%C3%A1s-4)
+#### [5. Feladat](https://github.com/nemethricsi/python2/blob/master/README.md#feladat-5) [(megoldás)](https://github.com/nemethricsi/python2/blob/master/README.md#megold%C3%A1s-f5)
 
-#### [6. Feladat](https://github.com/nemethricsi/python2/blob/master/README.md#feladat-6) [(megoldás)](https://github.com/nemethricsi/python2/blob/master/README.md#megold%C3%A1s-5)
+#### [6. Feladat](https://github.com/nemethricsi/python2/blob/master/README.md#feladat-6) [(megoldás)](https://github.com/nemethricsi/python2/blob/master/README.md#megold%C3%A1s-f6)
 
-#### [7. Feladat](https://github.com/nemethricsi/python2/blob/master/README.md#feladat-7) [(megoldás)](https://github.com/nemethricsi/python2/blob/master/README.md#megold%C3%A1s-6)
+#### [7. Feladat](https://github.com/nemethricsi/python2/blob/master/README.md#feladat-7) [(megoldás)](https://github.com/nemethricsi/python2/blob/master/README.md#megold%C3%A1s-f7)
 
-#### [8. Feladat](https://github.com/nemethricsi/python2/blob/master/README.md#feladat-8) [(megoldás)](https://github.com/nemethricsi/python2/blob/master/README.md#megold%C3%A1s-7)
+#### [8. Feladat](https://github.com/nemethricsi/python2/blob/master/README.md#feladat-8) [(megoldás)](https://github.com/nemethricsi/python2/blob/master/README.md#megold%C3%A1s-f8)
 
-#### [9. Feladat](https://github.com/nemethricsi/python2/blob/master/README.md#feladat-9) [(megoldás)](https://github.com/nemethricsi/python2/blob/master/README.md#megold%C3%A1s-8)
+#### [9. Feladat](https://github.com/nemethricsi/python2/blob/master/README.md#feladat-9) [(megoldás)](https://github.com/nemethricsi/python2/blob/master/README.md#megold%C3%A1s-f9)
 
 ## Feladat 1
 
