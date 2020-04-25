@@ -2,6 +2,22 @@
 
 #### [1. Feladat](https://github.com/nemethricsi/python2/blob/master/README.md#feladat-1) [(megoldás)](https://github.com/nemethricsi/python2/blob/master/README.md#megold%C3%A1s)
 
+#### [2. Feladat](https://github.com/nemethricsi/python2/blob/master/README.md#feladat-2) [(megoldás)](https://github.com/nemethricsi/python2/blob/master/README.md#megold%C3%A1s-1)
+
+#### [3. Feladat](https://github.com/nemethricsi/python2/blob/master/README.md#feladat-3) [(megoldás)](https://github.com/nemethricsi/python2/blob/master/README.md#megold%C3%A1s-2)
+
+#### [4. Feladat](https://github.com/nemethricsi/python2/blob/master/README.md#feladat-4) [(megoldás)](https://github.com/nemethricsi/python2/blob/master/README.md#megold%C3%A1s-3)
+
+#### [5. Feladat](https://github.com/nemethricsi/python2/blob/master/README.md#feladat-5) [(megoldás)](https://github.com/nemethricsi/python2/blob/master/README.md#megold%C3%A1s-4)
+
+#### [6. Feladat](https://github.com/nemethricsi/python2/blob/master/README.md#feladat-6) [(megoldás)](https://github.com/nemethricsi/python2/blob/master/README.md#megold%C3%A1s-5)
+
+#### [7. Feladat](https://github.com/nemethricsi/python2/blob/master/README.md#feladat-7) [(megoldás)](https://github.com/nemethricsi/python2/blob/master/README.md#megold%C3%A1s-6)
+
+#### [8. Feladat](https://github.com/nemethricsi/python2/blob/master/README.md#feladat-8) [(megoldás)](https://github.com/nemethricsi/python2/blob/master/README.md#megold%C3%A1s-7)
+
+#### [9. Feladat](https://github.com/nemethricsi/python2/blob/master/README.md#feladat-9) [(megoldás)](https://github.com/nemethricsi/python2/blob/master/README.md#megold%C3%A1s-8)
+
 ## Feladat 1
 
 Készíts egy PostIt osztályt, amelynek van 3 tagváltozója:
