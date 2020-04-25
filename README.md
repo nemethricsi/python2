@@ -30,7 +30,7 @@ Készíts egy PostIt osztályt, amelynek van 3 tagváltozója:
 - rózsaszínű posztit fekete szöveggel: "Hurrá!"
 - zöld posztit barna szöveggel: "Szuper!"
 
-### Megoldás:
+### Megoldás (F1):
 
 ```python
 class PostIt:
@@ -57,7 +57,7 @@ zöld = PostIt('zöld', 'Szuper!', 'barna')
   - iszik() a szomja csökken eggyel
   - jatszik() az éhsége és szomja növekszik eggyel
 
-### Megoldás:
+### Megoldás (F2):
 
 ```py
 # allat.py
@@ -135,7 +135,7 @@ print("..., téged választalak!")
 
 A class és a program kódja két különböző file-ban legyen.
 
-### Megoldás:
+### Megoldás (F3):
 
 ```py
 # Pokemon.py
@@ -228,7 +228,7 @@ print(fleet)
 
 A class és a program kódja két különböző file-ban legyen.
 
-### Megoldás:
+### Megoldás (F4):
 
 ```py
 # fleet.py
@@ -308,7 +308,7 @@ Hozz létre diák és tanár osztályokat: Student és Teacher néven
 - Hozz létre egy `Student` és `Teacher` példányt
 - Hívd meg a diák `question()` metódusát és a tanár `teach()` metódusát
 
-### Megoldás:
+### Megoldás (F5):
 
 ```py
 # student.py
@@ -374,7 +374,7 @@ Hozz létre egy konstruktort ami beállítja a következő értékeket:
 - `gas_amount`: 0
 - `capacity`: 100
 
-### Megoldás:
+### Megoldás (F6):
 
 ```py
 # car.py
@@ -436,7 +436,7 @@ Az osztály filceket tárol. Rendelkezzen a következő.
 - `count_usable()`: Visszaadja a számát azoknak a filceknek amikben még van tinta
 - `remove_trash()`: Törli az üres filceket
 
-### Megoldás:
+### Megoldás (F7):
 
 ```py
 # sharpie.py
@@ -524,7 +524,7 @@ Metódusok:
 - `breed()`: létrehoz egy új állatot ha van neki hely
 - `slaughter()`: kiveszi a legkevésbé éhes állatot
 
-### Megoldás:
+### Megoldás (F8):
 
 ```py
 # farm.py
@@ -612,7 +612,7 @@ Hozz létre `Blog` ami képes:
 - Törölni egyet index alapján
 - Megváltoztatni egyet, egy másik pédányra index alapján
 
-### Megoldás:
+### Megoldás (F9):
 
 ```py
 # blog.py
