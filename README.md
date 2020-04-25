@@ -1,5 +1,7 @@
 # Python Haladó (megoldások)
 
+#### [1. Feladat](https://github.com/nemethricsi/python2/blob/master/README.md#feladat-1) [(megoldás)](https://github.com/nemethricsi/python2/blob/master/README.md#megold%C3%A1s)
+
 ## Feladat 1
 
 Készíts egy PostIt osztályt, amelynek van 3 tagváltozója:
